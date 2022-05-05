@@ -11,8 +11,8 @@ public class Locators {
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.chrome.driver", "C:/Users/000QPC744/chromedriver_win32/chromedriver.exe");
 		WebDriver driver= new ChromeDriver();
-		//driver.get("http://www.facebook.com");
-		driver.navigate().to("https://jsbin.com/usidix/1");
+		driver.get("http://www.facebook.com");
+		//driver.navigate().to("https://jsbin.com/usidix/1");
 		driver.findElement(By.cssSelector("input[value=\"Go!\"]")).click();
 		String alertMessage=driver.switchTo().alert().getText();
 		System.out.println(alertMessage);
